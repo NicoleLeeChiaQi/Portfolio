@@ -1,0 +1,434 @@
+/* Base page styles */
+body {
+  margin: 0;
+  background-color: #0f172a; /* Dark slate background */
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+/* 1. The Flexbox Row Container */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 48px; /* 12 * 4px = 48px gap */
+  max-w: 1024px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+/* 2. Restricting the Image Frame */
+.image-frame {
+  width: 280px;  /* Fixed size */
+  height: 360px; /* Fixed size */
+  border-radius: 8px; /* Perfect circle */
+  overflow: hidden;   /* Cuts off image corners */
+  border: 4px solid #3b82f6; /* Blue border */
+  flex-shrink: 0; /* Prevents squishing */
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Magic: stops image stretching */
+}
+
+/* 3. Text Column Styles */
+.details-column {
+  flex: 1;
+}
+
+.welcome-tag {
+  color: #60a5fa;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.name-heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.title-text {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #3b82f6;
+  border-radius: 2px;
+  margin: 16px 0;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+.info-list li {
+  margin-bottom: 8px;
+  color: #94a3b8;
+}
+
+.info-list strong {
+  color: #e2e8f0;
+}
+
+.header-title {
+  text-align: center; /* This places the words exactly in the middle */
+  color: #ffffff;     /* Light blue color */
+  font-size: 50px;    /* Makes the text large (like text-xl) */
+  font-weight: bold;
+  letter-spacing: 0.05em; /* Spreads the letters out (like tracking-wider) */
+}
+
+/* Enable ultra-smooth scrolling across the entire page layout */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 1. Fixed Banner Container Styles */
+.navbar-banner {
+  position: fixed;      /* Locks the navigation bar to the top of the browser screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(15, 23, 42, 0.9); /* Translucent slate background */
+  backdrop-filter: blur(8px);             /* Frosty background glass effect */
+  border-bottom: 1px solid #1e293b;
+  z-index: 1000;        /* Ensures the header stays stacked securely on top of body content */
+}
+
+.navbar-container {
+  max-w: 1024px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #3b82f6;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+/* Styled Anchor Buttons */
+.nav-btn {
+  color: #94a3b8;
+  text-decoration: none; /* Removes standard underline decoration */
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out; /* Smooth transition animation for the hover color */
+}
+
+.nav-btn:hover {
+  color: #ffffff;
+  background-color: #1e293b; /* Subtle button background highlights on mouse hover */
+}
+
+/* 2. Main Page Layout Formatting */
+.main-content {
+  margin-top: 80px; /* Essential! Pushes body content down so it isn't hidden under the fixed top banner */
+}
+
+.page-section {
+  /*padding:0;*/
+  min-h: 60vh; /* Gives each section plenty of height so you can actually test the scrolling action */
+}
+
+/* Alternate background color block to make page transitions clear */
+.alternate-bg {
+  background-color: #0b0f19;
+}
+
+.section-placeholder {
+  max-w: 1024px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-placeholder h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+/* Container padding */
+.timeline-section {
+  max-w: 800px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.timeline-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* 1. The Main Track Line Container */
+.timeline-container {
+  position: relative; /* Acts as the anchor coordinate system for the line and dots */
+  padding-left: 32px; /* Leaves space on the left side for the line to sit */
+  border-left: 4px solid #1e293b; /* THIS IS THE VERTICAL LINE! Slate color */
+}
+
+/* 2. Individual Item Spacing */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px; /* Space between schools */
+}
+
+/* Remove bottom margin on the final item so it doesn't leak space */
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* 3. The Interactive Timeline Dot */
+.timeline-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #3b82f6; /* Blue marker center */
+  border: 4px solid #0f172a;    /* Dark border mask matching your background */
+  border-radius: 50%;         /* Perfect circle shape */
+  
+  /* Exact mathematical positioning to sit perfectly centered on the track line */
+  left: -44px; /* Shifts left to hover exactly above the border-left line */
+  top: 4px;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2); /* Soft blue glowing outer ring */
+}
+
+/* 4. The Content Card Box */
+.timeline-content {
+  background-color: #1e293b; /* Dark card block background */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.timeline-date {
+  font-family: monospace;
+  color: #60a5fa; /* Light blue date label */
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  margin: 0 0 4px 0;
+  color: #ffffff;
+}
+
+.timeline-content .degree {
+  font-size: 16px;
+  color: #e2e8f0;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.timeline-content .details {
+  font-size: 14px;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+/* 1. Full-Width Section Wrapper */
+.profile-container1 {
+  width: 100%;
+  max-w: 100%;
+  box-sizing: border-box;
+  padding: 64px 24px;
+}
+
+/* 2. Text layout positioning inside the column */
+.details-column {
+  width: 100%;
+}
+
+/* 3. The 3-Column Flexbox Container */
+.profile-container1 .profile-container {
+  display: flex;
+  flex-direction: row;     /* Forces the 3 lists to sit side-by-side */
+  align-items: flex-start; /* Aligns the tops of the columns evenly */
+  gap: 32px;               /* Creates uniform spaces between each column */
+  width: 100%;
+  max-w: 100%;
+  box-sizing: border-box;
+  margin-top: 24px;
+}
+
+/* 4. Formatting Each Individual List Column */
+.profile-container1 .info-list {
+  flex: 1;                 /* FORCES ALL 3 LISTS TO OCCUPY EQUAL WIDTH (33.3% each) */
+  list-style: none;        /* Removes default bullet points from the ul */
+  padding: 24px;
+  margin: 0;
+  background-color: #1e293b; /* Dark card background */
+  border: 1px solid #334155; /* Subtle border outline */
+  border-radius: 8px;      /* Soft rounded corners */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.profile-container1 .info-list:hover {
+  border-color: #475569; /* Slightly brightens the border outline from dark to slate gray */
+  
+  /* Adds a smooth, soft shadow glow around the card */
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4); 
+}
+
+/* 5. Typography and Spacing Inside the Cards */
+.profile-container1 .info-list li strong {
+  display: block;          /* Pushes the title onto its own line */
+  font-size: 20px;
+  color: #3b82f6;          /* Sleek blue highlight color for headers */
+  border-bottom: 2px solid #334155;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.profile-container1 .info-list p {
+  font-size: 15px;
+  color: #94a3b8;          /* Muted gray text color */
+  line-height: 1.6;
+  margin: 8px 0 0 0;       /* Adds small top gap for clean reading */
+}
+
+/* Style for your link buttons inside the projects list */
+.profile-container1 .card-link {
+  display: inline;       /* Forces it to flow precisely like normal text words */
+  color: inherit;        /* Inherits the exact gray color (#94a3b8) of the paragraph */
+  font-size: inherit;    /* Inherits the 15px font size automatically */
+  font-weight: inherit;  /* Inherits normal thickness so it starts un-bolded */
+  text-decoration: none; /* Removes any default browser underlines */
+  
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+/* Hover state: Only triggers when your cursor physically touches the word */
+.profile-container1 .card-link:hover {
+  font-weight: bold;     /* Makes it bold on touch */
+  color: #4e92ff;        /* Brightens to your custom blue selection */
+  cursor: pointer;       /* Changes mouse cursor to a hand indicator */
+}
+
+/* The style for the description border box */
+.profile-container1 .internship-box {
+  background-color: #1e293b; /* Sleek dark theme card color background */
+  border: 1px solid #334155; /* Clean slate-colored border outline line */
+  border-radius: 8px;        /* Soft rounded frame corners */
+  padding: 20px 24px;        /* Breathing space inside between text and borders */
+  margin-top: 16px;          /* Clean gap pushing it down from the timeline text */
+  box-sizing: border-box;
+  width: 100%;
+  
+  /* Smooth fading shadow when rendering */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Clean up list spacing adjustments inside your new box structure */
+.profile-container1 .internship-box .info-list {
+  margin: 0;
+  color: #94a3b8;            /* Muted reader-friendly grey color */
+  line-height: 1.7;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* 1. The Masking Window: Hides images that roll off the screen walls */
+.gallery-slider {
+  width: 100%;
+  overflow: hidden; /* Crucial! Prevents horizontal scrollbars from appearing on your page */
+  padding: 16px 0;
+  position: relative;
+}
+
+/* 2. The Moving Conveyor Belt Track */
+.gallery-track {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: max-content; /* Allows the container box to grow as long as your row of photos */
+  
+  /* Attaches the marquee animation loop */
+  animation: scrollMarquee 20s linear infinite;
+}
+
+/* 3. Pauses the motion when a user hovers their mouse cursor on a picture */
+.gallery-track:hover {
+  animation-play-state: paused;
+}
+
+/* 4. Individual Photo Styling Card */
+.gallery-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover; /* Prevents your photos from getting squished or stretched out */
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 5. THE ANIMATION TIMELINE ENGINE */
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0); /* Starts at position zero */
+  }
+  100% {
+    /* Shifts the entire track left by exactly half its width */
+    transform: translateX(calc(-50% - 12px)); 
+  }
+}
+
+.back-btn {
+  display: inline-block;
+  color: #60a5fa;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 14px;
+  margin-bottom: 24px;
+  transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #ffffff;
+}
+
+.internship-detail-section {
+  scroll-margin-top: 100px; /* Leaves comfortable breathing room at the top when autoscrolling */
+}
+
+.underline-word {
+  text-decoration: underline;
+}
