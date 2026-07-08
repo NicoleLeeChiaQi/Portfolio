@@ -482,29 +482,51 @@ body {
 /* ==========================================================================
    9. RESPONSIVE DESIGN (MOBILE MEDIA QUERY)
    ========================================================================== */
-@media (max-width: 768px) {
   
   /* 1. Turn the 3-column personal experience layout into a 1-column vertical stack */
+@media (max-width: 768px) {
+
+  /* NEW: Fix the Personal Details Hero Section */
+  .profile-container {
+    flex-direction: column;   /* Stacks the picture on top of the text details */
+    align-items: center;      /* Centers both items on the phone screen */
+    gap: 24px;                /* Shrinks the gap so it fits nicely */
+    margin: 32px auto;        /* Reduces top/bottom margin spacing */
+    text-align: center;       /* Centers your name and title text for mobile appeal */
+  }
+
+  /* NEW: Shrink the profile image frame slightly so it doesn't clip on small screens */
+  .image-frame {
+    width: 220px;             /* Shrunk down from 280px */
+    height: 280px;            /* Shrunk down from 360px */
+  }
+
+  /* NEW: Force the details divider to center alongside the text alignment */
+  .profile-container .divider {
+    margin: 12px auto;
+  }
+
+  /* 1. Turn the 3-column personal experience layout into a 1-column vertical stack */
   .profile-container1 .profile-container {
-    flex-direction: column; /* Stacks the cards vertically on phone screens */
-    gap: 20px;              /* Reduces the gap slightly for tight spaces */
+    flex-direction: column;
+    gap: 20px;
   }
 
   /* 2. Ensure each card takes up the full width of the mobile screen */
   .profile-container1 .info-list {
     width: 100%;
-    flex: none;             /* Disables the equal-width splitting rule */
+    flex: none;
   }
-  
+
   /* 3. Handle your About Me viewport-lock so it safely scrolls on small devices */
   .about-viewport-container {
-    height: auto;           /* Unlocks the fixed 100vh height constraint */
-    max-height: none;       /* Allows the container to grow naturally */
-    overflow-y: visible;    /* Restores normal vertical scrolling */
+    height: auto;
+    max-height: none;
+    overflow-y: visible;
     padding: 24px 16px;
   }
-  
+
   .about-layout-stack {
-    height: auto;           /* Lets the stacking columns flow normally */
+    height: auto;
   }
 }
