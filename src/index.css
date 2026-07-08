@@ -517,16 +517,4 @@ body {
     width: 100%;
     flex: none;
   }
-
-  /* 3. Handle your About Me viewport-lock so it safely scrolls on small devices */
-  .about-viewport-container {
-    height: auto;
-    max-height: none;
-    overflow-y: visible;
-    padding: 24px 16px;
-  }
-
-  .about-layout-stack {
-    height: auto;
-  }
 }
