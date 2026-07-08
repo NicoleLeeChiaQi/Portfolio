@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import OL1 from '../assets/OL1.jpeg';
 import OL2 from '../assets/OL2.jpeg';
