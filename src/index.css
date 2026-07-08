@@ -478,3 +478,33 @@ body {
   border-radius: 8px;
   border: 1px solid #334155;
 }
+
+/* ==========================================================================
+   9. RESPONSIVE DESIGN (MOBILE MEDIA QUERY)
+   ========================================================================== */
+@media (max-width: 768px) {
+  
+  /* 1. Turn the 3-column personal experience layout into a 1-column vertical stack */
+  .profile-container1 .profile-container {
+    flex-direction: column; /* Stacks the cards vertically on phone screens */
+    gap: 20px;              /* Reduces the gap slightly for tight spaces */
+  }
+
+  /* 2. Ensure each card takes up the full width of the mobile screen */
+  .profile-container1 .info-list {
+    width: 100%;
+    flex: none;             /* Disables the equal-width splitting rule */
+  }
+  
+  /* 3. Handle your About Me viewport-lock so it safely scrolls on small devices */
+  .about-viewport-container {
+    height: auto;           /* Unlocks the fixed 100vh height constraint */
+    max-height: none;       /* Allows the container to grow naturally */
+    overflow-y: visible;    /* Restores normal vertical scrolling */
+    padding: 24px 16px;
+  }
+  
+  .about-layout-stack {
+    height: auto;           /* Lets the stacking columns flow normally */
+  }
+}
