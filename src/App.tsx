@@ -4,6 +4,9 @@ import EducationBg from './components/educationBg';
 import PersonalExp from './components/personalExp';
 import AboutMe from './components/aboutMe';
 import Internship from './components/internship'; // Import your new page
+import IndividualProjects from './components/individualProjects';
+import GroupProjects from './components/groupProjects';
+import Participation from './components/participation';
 
 // Group your homepage elements together
 const Home = () => (
@@ -35,6 +38,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/internships" element={<Internship />} />
+          <Route path="/individualProjects" element={<IndividualProjects/>}/>
+          <Route path="/groupProjects" element={<GroupProjects/>}/>
+          <Route path="/participation" element={<Participation/>}/>
         </Routes>
       </div>
     </Router>

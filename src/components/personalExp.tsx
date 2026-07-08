@@ -22,15 +22,36 @@ function PersonalExp() {
                     <ul className="info-list">
                         <li>
                             <strong>Individual Projects</strong>
-                            <p>Fitness & Health Website</p>
+                            <p>
+                                <Link to="/individualProjects#fitness" className="card-link">
+                                🔹Fitness & Health Website
+                                </Link>
+                            </p>
                         </li>
                     </ul>
                     <ul className="info-list">
                         <li>
                             <strong>Group Projects</strong>
                             <p>
-                                <a href="https://github.com/NicoleLeeChiaQi/Mario-Game/tree/main/extension" className="card-link">Mario Game</a>
+                                <Link to="/groupProjects#mariogame" className="card-link">
+                                ⚡Mario Game
+                                </Link>                           
                             </p>
+                        </li>
+                    </ul>
+                    <ul className="info-list">
+                        <li>
+                            <strong>Participation</strong>
+                            <li>
+                                <Link to="/participation#spark" className="card-link">
+                                ⭐️ SPARK Competition
+                                </Link>                           
+                            </li>
+                            <li>
+                                <Link to="/participation#trading" className="card-link">
+                                ⭐️ CME x Kancil Capital Trading Competition
+                                </Link>
+                            </li>
                         </li>
                     </ul>
                 </div>

@@ -2,6 +2,10 @@ import photo1 from '../assets/me1.jpeg';
 import photo2 from '../assets/me2.jpeg';
 import photo3 from '../assets/me3.jpeg';
 import photo4 from '../assets/me4.jpeg';
+import photo5 from '../assets/me5.jpeg';
+import photo6 from '../assets/me6.jpeg';
+import photo7 from '../assets/me7.jpeg';
+import photo8 from '../assets/me8.jpeg';
 
 function AboutMe() {
     return (
@@ -40,15 +44,23 @@ function AboutMe() {
                         
                         {/* FIRST SET OF IMAGES */}
                         <img src={photo1} alt="Nicole 1" className="gallery-img" />
+                        <img src={photo5} alt="Nicole 15" className="gallery-img" />
                         <img src={photo2} alt="Nicole 2" className="gallery-img" />
+                        <img src={photo6} alt="Nicole 6" className="gallery-img" />
                         <img src={photo3} alt="Nicole 3" className="gallery-img" />
+                        <img src={photo7} alt="Nicole 7" className="gallery-img" />
                         <img src={photo4} alt="Nicole 4" className="gallery-img" />
+                        <img src={photo8} alt="Nicole 8" className="gallery-img" />
 
                         {/* CRITICAL TRICK: Duplicate the exact same images so the loop is seamless */}
-                        <img src={photo1} alt="Nicole 1 duplicate" className="gallery-img" />
-                        <img src={photo2} alt="Nicole 2 duplicate" className="gallery-img" />
-                        <img src={photo3} alt="Nicole 3 duplicate" className="gallery-img" />
-                        <img src={photo4} alt="Nicole 4 duplicate" className="gallery-img" />
+                        <img src={photo1} alt="Nicole 1" className="gallery-img" />
+                        <img src={photo5} alt="Nicole 15" className="gallery-img" />
+                        <img src={photo2} alt="Nicole 2" className="gallery-img" />
+                        <img src={photo6} alt="Nicole 6" className="gallery-img" />
+                        <img src={photo3} alt="Nicole 3" className="gallery-img" />
+                        <img src={photo7} alt="Nicole 7" className="gallery-img" />
+                        <img src={photo4} alt="Nicole 4" className="gallery-img" />
+                        <img src={photo8} alt="Nicole 8" className="gallery-img" />
 
                     </div>
                 </div>
