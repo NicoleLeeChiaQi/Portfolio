@@ -33,14 +33,14 @@ const Home = () => (
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="portfolio-root">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/internships" element={<Internship />} />
-          <Route path="/individualProjects" element={<IndividualProjects/>}/>
-          <Route path="/groupProjects" element={<GroupProjects/>}/>
-          <Route path="/participation" element={<Participation/>}/>
+          <Route path="/individualProjects" element={<IndividualProjects />} />
+          <Route path="/groupProjects" element={<GroupProjects />} />
+          <Route path="/participation" element={<Participation />} />
         </Routes>
       </div>
     </Router>
