@@ -49,6 +49,28 @@ function IndividualProjects() {
             </a>
           </div>
 
+          <h2>💤Dream Studio</h2>
+          <p className="timeline-date">Language: </p>
+          
+          {/* THE INTERNSHIP DESCRIPTION CONTAINER BOX */}
+          <div className="internship-box"> 
+            <h4 className="sub-heading-tag">Project Overview</h4>
+            <p className="box-description">
+              ...
+            </p>
+            
+            <h4 className="sub-heading-tag">Technical Breakdown</h4>
+            <ul className="box-list">
+              <li>
+                ...
+              </li>
+            </ul>
+            <br/>
+            <a href="https://github.com/NicoleLeeChiaQi/Dream-Studio">
+            <p className="btn">Source Code</p>
+            </a>
+          </div>
+
           {/* AUTO-SCROLLING MARQUEE GALLERY FOR OPENLAUNCH */}
           
         </section>
@@ -69,4 +91,3 @@ function IndividualProjects() {
 }
 
 export default IndividualProjects;
-

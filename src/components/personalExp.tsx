@@ -22,11 +22,22 @@ function PersonalExp() {
                     <ul className="info-list">
                         <li>
                             <strong>Individual Projects</strong>
-                            <p>
+                            {/* <p>
                                 <Link to="/individualProjects#fitness" className="card-link">
                                 🔹Fitness & Health Website
+                                🔹Dream Studio
                                 </Link>
-                            </p>
+                            </p> */}
+                            <li>
+                                <Link to="/individualProjects#fitness" className="card-link">
+                                🔹Fitness & Health Website
+                                </Link>                           
+                            </li>
+                            <li>
+                                <Link to="/individualProjects#dreamStudio" className="card-link">
+                                🔹Dream Studio
+                                </Link>
+                            </li>
                         </li>
                     </ul>
                     <ul className="info-list">
