@@ -57,94 +57,51 @@ function PersonalExp() {
                                 </Link>
 
                             </p> */}
-
                             <li>
-
                                 <Link to="/individualProjects#fitness" className="card-link">
-
                                 🔹Fitness & Health Website
-
                                 </Link>                          
-
                             </li>
-
                             <li>
-
                                 <Link to="/individualProjects#dreamStudio" className="card-link">
-
                                 🔹Dream Studio
-
                                 </Link>
-
                             </li>
-
                         </li>
-
                     </ul>
-
                     <ul className="info-list">
-
                         <li>
-
                             <strong>Group Projects</strong>
-
-                            <p>
-
+                            <li>
                                 <Link to="/groupProjects#mariogame" className="card-link">
-
                                 ⚡Mario Game
-
                                 </Link>                          
-
-                            </p>
-
-                        </li>
-
-                    </ul>
-
-                    <ul className="info-list">
-
-                        <li>
-
-                            <strong>Participation</strong>
-
-                            <li>
-
-                                <Link to="/participation#spark" className="card-link">
-
-                                ⭐️ SPARK Competition
-
-                                </Link>                          
-
                             </li>
-
                             <li>
-
-                                <Link to="/participation#trading" className="card-link">
-
-                                ⭐️ CME x Kancil Capital Trading Competition
-
+                                <Link to="/groupProjects#sudokusolver" className="card-link">
+                                ⚡Sudoku Solver
                                 </Link>
-
                             </li>
-
                         </li>
-
                     </ul>
-
+                    <ul className="info-list">
+                        <li>
+                            <strong>Participation</strong>
+                            <li>
+                                <Link to="/participation#spark" className="card-link">
+                                ⭐️ SPARK Competition
+                                </Link>                          
+                            </li>
+                            <li>
+                                <Link to="/participation#trading" className="card-link">
+                                ⭐️ CME x Kancil Capital Trading Competition
+                                </Link>
+                            </li>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
-
         </div>
-
-
-
-
-
     );
-
 }
-
-
 export default PersonalExp;

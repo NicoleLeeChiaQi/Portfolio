@@ -49,6 +49,25 @@ function GroupProjects() {
             </a>
           </div>
 
+          <h2>🔢🎲✏️Sudoku Solver</h2>
+          <p className="timeline-date">Language: Haskell</p>
+          {/* THE INTERNSHIP DESCRIPTION CONTAINER BOX */}
+          <div className="internship-box">
+            <h4 className="sub-heading-tag">Project Overview</h4>
+            <p className="box-description">
+              ...
+            </p>
+            <h4 className="sub-heading-tag">Technical Breakdown</h4>
+            <ul className="box-list">
+              <li>
+                ...
+              </li>
+            </ul>
+            <br/>
+            <a href="https://github.com/kuanzhiti/SudokuSolver">
+            <p className="btn">Source Code</p>
+            </a>
+          </div>
           {/* AUTO-SCROLLING MARQUEE GALLERY FOR OPENLAUNCH */}
           
         </section>
