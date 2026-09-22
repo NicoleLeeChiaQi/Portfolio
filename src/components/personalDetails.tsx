@@ -25,8 +25,10 @@ function PersonalDetails() {
           <li>🎓 <strong>Education:</strong> BEng Computing (First Year)</li>
           <li>📍 <strong>Location:</strong> London, UK</li>
           <li>☎️ <strong>Contact:</strong> (🇬🇧) +44 7887 003 656 / (🇲🇾) +6011 5989 4412</li> 
-          <li>📩 <strong>Email:</strong> nicoleleecq@gmail.com</li> 
-          <li>🔗 <strong>LinkedIn: </strong>  https://www.linkedin.com/in/nicole-lee-chia-qi-3567072a5/ </li>
+          <li>📩 <strong>Email:</strong> <a href="mailto:nicoleleecq@gmail.com"> nicoleleecq@gmail.com</a> </li> 
+          <li>🔗 <strong>LinkedIn: </strong>  <a className="info-list "href="https://www.linkedin.com/in/nicole-lee-chia-qi-3567072a5/"> Nicole Lee
+          </a>
+          </li>
         </ul>
       </div>
 

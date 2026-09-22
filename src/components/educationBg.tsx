@@ -1,33 +1,3 @@
-/* function EducationBg() {
-    return (
-        <div className="profile-container">
-            <div className="details-column">
-                <h1 className="name-heading">Education Background</h1>
-
-                <div className="divider"></div>
-
-                <ul className="info-list">
-                    <li>
-                        <strong>SMJK Sin Min</strong>
-                        <p>Result: 11A+</p>
-                    </li>
-                    <li>
-                        <strong>Koley Yayasan UEM (KYUEM)</strong>
-                        <p>Result: 3A* 1A</p>
-                    </li>
-                    <li>
-                        <strong>Imperial College London</strong>
-                        <p>Result: Haven't released</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-    );
-}
-*/
-
 function EducationBg() {
   return (
     <div className="timeline-section">
@@ -92,6 +62,5 @@ function EducationBg() {
     </div>
   );
 }
-
 
 export default EducationBg;

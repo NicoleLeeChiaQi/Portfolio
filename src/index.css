@@ -197,6 +197,11 @@ body {
   color: #94a3b8;
 }
 
+.info-list a {
+  margin-bottom: 8px;
+  color: #94a3b8;
+}
+
 .info-list strong {
   color: #e2e8f0;
 }
