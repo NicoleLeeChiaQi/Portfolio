@@ -82,6 +82,16 @@ function PersonalExp() {
                                 ⚡Sudoku Solver
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/groupProjects#cartoonizeImg" className="card-link">
+                                ⚡Cartoonize Image
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/groupProjects#numRecognition" className="card-link">
+                                ⚡Number Recognition
+                                </Link>
+                            </li>
                         </li>
                     </ul>
                     <ul className="info-list">

@@ -46,9 +46,7 @@ function EducationBg() {
             <h3>Imperial College London</h3>
             <p className="degree">BEng/MEng Computing</p>
             <p className="details">
-                <strong>Results:</strong> Haven't Released 
-                <br /> {/*New Line*/}
-                First Year student focusing on Functional Programming (Haskell), Low-Level Systems Architecture, and ARMv8 Assembly programming.
+                <strong>Results:</strong> Expected first class
             </p>
           </div>
         </div>
@@ -62,8 +60,6 @@ function EducationBg() {
             <p className="degree">A-Levels</p>
             <p className="details">
                 <strong>Results: </strong>3A* 1A 
-                <br />
-                Achieved strong academic foundations required for core computing theory and discrete mathematical structures.
             </p>
           </div>
         </div>
@@ -76,8 +72,6 @@ function EducationBg() {
             <p className="degree">High School</p>
             <p className="details">
                 <strong>Results: </strong>11A+ 
-                <br />
-                Achieved strong academic foundations required for core computing theory and discrete mathematical structures.
             </p>
           </div>
         </div>
@@ -90,8 +84,6 @@ function EducationBg() {
             <p className="degree">Primary School</p>
             <p className="details">
                 <strong>Results: </strong>8A 
-                <br />
-                Achieved strong academic foundations required for core computing theory and discrete mathematical structures.
             </p>
           </div>
         </div>

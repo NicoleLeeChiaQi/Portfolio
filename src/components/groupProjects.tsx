@@ -48,7 +48,8 @@ function GroupProjects() {
             <p className="btn">Source Code</p>
             </a>
           </div>
-
+        </section>
+        <section id="sudokusolver" className="internship-detail-section">
           <h2>🔢🎲✏️Sudoku Solver</h2>
           <p className="timeline-date">Language: Haskell</p>
           {/* THE INTERNSHIP DESCRIPTION CONTAINER BOX */}
@@ -65,6 +66,48 @@ function GroupProjects() {
             </ul>
             <br/>
             <a href="https://github.com/kuanzhiti/SudokuSolver">
+            <p className="btn">Source Code</p>
+            </a>
+          </div>
+        </section>
+        <section id="cartoonizeImg" className="internship-detail-section">
+          <h2>🐻🧸Cartoonize Image</h2>
+          <p className="timeline-date">Language: Python</p>
+          {/* THE INTERNSHIP DESCRIPTION CONTAINER BOX */}
+          <div className="internship-box">
+            <h4 className="sub-heading-tag">Project Overview</h4>
+            <p className="box-description">
+              ...
+            </p>
+            <h4 className="sub-heading-tag">Technical Breakdown</h4>
+            <ul className="box-list">
+              <li>
+                ...
+              </li>
+            </ul>
+            <br/>
+            <a href="https://github.com/kuanzhiti/MLcartooning">
+            <p className="btn">Source Code</p>
+            </a>
+          </div>
+        </section>
+        <section id="numRecognition" className="internship-detail-section">
+          <h2>1️⃣6️⃣ Number Recognition</h2>
+          <p className="timeline-date">Language: Python</p>
+          {/* THE INTERNSHIP DESCRIPTION CONTAINER BOX */}
+          <div className="internship-box">
+            <h4 className="sub-heading-tag">Project Overview</h4>
+            <p className="box-description">
+              ...
+            </p>
+            <h4 className="sub-heading-tag">Technical Breakdown</h4>
+            <ul className="box-list">
+              <li>
+                ...
+              </li>
+            </ul>
+            <br/>
+            <a href="https://github.com/NicoleLeeChiaQi/MLNumRecognition">
             <p className="btn">Source Code</p>
             </a>
           </div>
