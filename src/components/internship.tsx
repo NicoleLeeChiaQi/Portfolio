@@ -38,34 +38,38 @@ function Internship() {
           <div className="internship-box"> 
             <h3 className="box-project-title">National AI Competition (NAIC) Voting Platform</h3>
             
-            <h4 className="sub-heading-tag">Project Overview</h4>
-            <p className="box-description">
-              For the National AI Competition (NAIC), I developed a high-performance,
-              responsive voting web application designed to handle high-traffic 
-              user engagement seamlessly. My primary objective was to build a 
-              secure, intuitive, and visually engaging interface capable of 
-              processing user interactions smoothly while maintaining optimal 
-              rendering speeds and application stability during peak voting 
-              windows.
-            </p>
-            
             <h4 className="sub-heading-tag">Technical Breakdown</h4>
             <ul className="box-list">
               <li>
-                <strong>Frontend Architecture:</strong> I built the platform using Next.js 
-                and React, leveraging rendering strategies like server-side rendering 
-                (SSR) and static site generation (SSG) where appropriate to minimize 
-                initial page load times and optimize Core Web Vitals. I designed a 
-                modular, reusable component architecture that ensured clean state 
-                management and fluid user transitions.
+                <strong>High-Traffic Voting Webpage:</strong> Collaborated in a cross-functional team to develop and deploy a high-traffic voting platform via Vercel, reliably handling over 1,000 unique voters.
+              </li>
+              <li>
+                <strong>Responsive Frontend Architecture:</strong> Engineered a modern, component-driven user interface utilizing Next.js and React to deliver seamless mobile and desktop cross-device performance.
+              </li>
+              <li>
+                <strong>Anti-Fraud & State Integrity:</strong> Implemented secure cookie-based session tracking and integrated Qdrant to eliminate duplicate voting and preserve ballot integrity.
               </li>
             </ul>
+            <a href="https://github.com/NicoleLeeChiaQi/voting-app">
+            <p className="btn">Source Code</p>
+            </a>
             <br/>
             <h3 className="box-project-title">CV Semantic Search</h3>
-            <h4 className="sub-heading-tag">Project Overview</h4>
             <h4 className="sub-heading-tag">Technical Breakdown</h4>
-            <br/>
-            <p>Other than.... </p>
+            <ul className="box-list">
+              <li>
+                <strong>Candidate Matching Engine:</strong> Developed a semantic retrieval tool leveraging Gemini Flash dense embeddings to surface the top 10 most compatible candidates against job descriptions.
+              </li>
+              <li>
+                <strong>Vector Optimization & Scoring:</strong> Architected a Qdrant vector database and engineered a custom cosine similarity algorithm with section-weighted scoring across candidate profiles.
+              </li>
+              <li>
+                <strong>ETL Chunking & Keyword UI:</strong> Designed a token-aware document chunking pipeline alongside an interactive keyword-matching interface to highlight candidate competencies.
+              </li>
+            </ul>
+            <a href="https://github.com/NicoleLeeChiaQi/CV-Semantic-Search">
+            <p className="btn">Source Code</p>
+            </a>
           </div>
 
           {/* AUTO-SCROLLING MARQUEE GALLERY FOR OPENLAUNCH */}
