@@ -1,4 +1,5 @@
 import profileImg from '../assets/cv_pic.jpeg'; // Adjust path if it's in assets
+import cvFile from '../assets/Nicole_CV.pdf'
 
 function PersonalDetails() {
   return (
@@ -25,8 +26,17 @@ function PersonalDetails() {
           <li>🎓 <strong>Education:</strong> BEng Computing (First Year)</li>
           <li>📍 <strong>Location:</strong> London, UK</li>
           <li>☎️ <strong>Contact:</strong> (🇬🇧) +44 7887 003 656 / (🇲🇾) +6011 5989 4412</li> 
-          <li>📩 <strong>Email:</strong> <a href="mailto:nicoleleecq@gmail.com"> nicoleleecq@gmail.com</a> </li> 
-          <li>🔗 <strong>LinkedIn: </strong>  <a className="info-list "href="https://www.linkedin.com/in/nicole-lee-chia-qi-3567072a5/"> Nicole Lee
+          <li>📩 <strong>Email:</strong> <a href="mailto:nicoleleecq@gmail.com" className="nav-btn nav-cv-btn"> nicoleleecq@gmail.com</a> </li> 
+          <li>🔗 <strong>LinkedIn: </strong>  <a className="nav-btn nav-cv-btn" href="https://www.linkedin.com/in/nicole-lee-chia-qi-3567072a5/"> Nicole Lee
+          </a>
+          </li>
+          <li>📄 <strong>CV: </strong>
+          <a 
+          href={cvFile} 
+          download="NicoleChiaQiLee_CV.pdf" 
+          className="nav-btn nav-cv-btn"
+          >
+            NicoleChiaQiLee_CV
           </a>
           </li>
         </ul>

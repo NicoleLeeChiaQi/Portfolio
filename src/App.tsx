@@ -7,6 +7,7 @@ import Internship from './components/internship'; // Import your new page
 import IndividualProjects from './components/individualProjects';
 import GroupProjects from './components/groupProjects';
 import Participation from './components/participation';
+import cvFile from './assets/Nicole_CV.pdf';
 
 // Group your homepage elements together
 const Home = () => (
@@ -18,6 +19,15 @@ const Home = () => (
           <a href="#about" className="nav-btn">About Me</a>
           <a href="#experience" className="nav-btn">Experience</a>
           <a href="#education" className="nav-btn">Education</a>
+
+          {/* CV DOWNLOAD BUTTON */}
+          <a 
+          href={cvFile} 
+          download="NicoleChiaQiLee_CV.pdf" 
+          className="nav-btn nav-cv-btn"
+          >
+            Download CV
+          </a>
         </div>
       </div>
     </nav>

@@ -27,13 +27,29 @@ body {
 }
 
 .navbar-container {
-  max-w: 1024px;
+  /* max-w: 1024px;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 16px 24px; */
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /* flex-direction: row;
+  justify-content: space-between; */
   align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.nav-cv-btn {
+  margin-left: auto;
+  /* border: 1px solid #3b82f6; */
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #3b82f6;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-cv-btn:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
 }
 
 .logo {
